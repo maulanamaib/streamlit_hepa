@@ -1,5 +1,5 @@
 joblib
 numpy
-WebBrowser
+webbrowser
 pandas
 time
