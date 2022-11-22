@@ -58,7 +58,7 @@ def normalisasi(x):
 
 def knn(x):
     
-    return joblib.load('WebPendat/model/KNNmodel5.pkl').predict(x)
+    return joblib.load('WebPendat/model/KNNmodel3.pkl').predict(x)
 
 
 # print(normalisasi([14,1,345,1]))
