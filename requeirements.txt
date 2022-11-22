@@ -1,3 +1,5 @@
 joblib
 numpy
 WebBrowser
+pandas
+time
