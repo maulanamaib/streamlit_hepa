@@ -3,3 +3,4 @@ numpy
 webbrowser
 pandas
 time
+scikit-learn
