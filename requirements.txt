@@ -1,6 +1,6 @@
-joblib
-numpy
-webbrowser
-pandas
+joblib==1.6.1
+numpy==1.20.3
+webbrowser==3.11.0
+pandas==1.5.1
 time
-scikit-learn
+scikit-learn==1.1.3
