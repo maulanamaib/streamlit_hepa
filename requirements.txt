@@ -15,3 +15,4 @@ nltk
 pymupdf
 wget
 tabula-py
+matplotlib==3.6.2
