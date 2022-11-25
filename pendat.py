@@ -379,7 +379,7 @@ print('accuracy: {}'.format(acc))'''
             knn = KNeighborsClassifier(n_neighbors=k)
             knn.fit(X_train,y_train)
             # save model
-            filenameKNN = '/content/drive/MyDrive/datamining/tugas/model/KNNmodel'+str(k)+'.pkl'
+            filenameKNN = 'https://drive.google.com/drive/folders/1c3AsExydve2WKYhOaagqw5NuN4zbclTZ/KNNmodel'+str(k)+'.pkl'
             joblib.dump(knn,filenameKNN)
             y_pred=knn.predict(X_test)
             scores[k] = accuracy_score(y_test,y_pred)
