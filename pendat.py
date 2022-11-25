@@ -263,10 +263,10 @@ with tab2:
 
     st.code(SaDa, language='python') 
    #Menyimpan data terbaru
-    from pathlib import Path  
-    filepath = Path('/content/drive/MyDrive/datamining/tugas/model/datafix2.csv')  
-    filepath.parent.mkdir(parents=True, exist_ok=True)  
-    dada.to_csv(filepath) 
+#     from pathlib import Path  
+#     filepath = Path('/content/drive/MyDrive/datamining/tugas/model/datafix2.csv')  
+#     filepath.parent.mkdir(parents=True, exist_ok=True)  
+#     dada.to_csv(filepath) 
       
     st.code(pre, language='python')  
     #Preprocesing
