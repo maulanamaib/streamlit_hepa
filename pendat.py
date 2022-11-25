@@ -380,7 +380,7 @@ print('accuracy: {}'.format(acc))'''
             knn.fit(X_train,y_train)
             # save model
             filenameKNN = 'https://drive.google.com/drive/folders/1c3AsExydve2WKYhOaagqw5NuN4zbclTZ/KNNmodel'+str(k)+'.pkl'
-            joblib.dump(knn,filenameKNN)
+#             joblib.dump(knn,filenameKNN)
             y_pred=knn.predict(X_test)
             scores[k] = accuracy_score(y_test,y_pred)
             scores_list.append(accuracy_score(y_test,y_pred))
