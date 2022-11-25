@@ -307,9 +307,9 @@ with tab2:
 
     st.code(sv  , language='python') 
     #save normalisi
-    import joblib
-    filename = '/content/drive/MyDrive/datamining/tugas/model/caca.sav'
-    joblib.dump(scaler, filename) 
+#     import joblib
+#     filename = '/content/drive/MyDrive/datamining/tugas/model/caca.sav'
+#     joblib.dump(scaler, filename) 
 
 
 
