@@ -4,3 +4,14 @@ python-time
 streamlit
 scikit-learn==1.1.3
 pathlib==1.0.1
+numpy
+pandas
+pillow
+streamlit>=1.8.1
+requests
+requests_html
+pdfminer
+nltk
+pymupdf
+wget
+tabula-py
