@@ -16,3 +16,4 @@ pymupdf
 wget
 tabula-py
 matplotlib==3.6.2
+cpython==3.11
