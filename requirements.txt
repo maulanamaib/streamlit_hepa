@@ -13,3 +13,4 @@ matplotlib==3.6.2
 streamlit-modal
 pip
 html.Div
+Bokreh==2.4.0
