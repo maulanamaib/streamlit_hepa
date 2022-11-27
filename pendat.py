@@ -58,9 +58,13 @@ with tab1:
 #     col1 = st.markdown(f'''<a href='https://github.com/maulanamaib/streamlit_hepa.git'></a>''',unsafe_allow_html=True)
 #     kolom[1].button('GitHub', col1)
    
-    link = '[GitHub](http://github.com)'
-    kolom[1].markdown = (link.button, unsafe_allow_html=True)
- 
+#     link = '[GitHub](http://github.com)'
+#     kolom[1].markdown = (link, unsafe_allow_html=True)
+    
+    st.markdown('<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">', unsafe_allow_html=True)
+    st.markdown(hide_streamlit_style, unsafe_allow_html=True) 
+    st.markdown(' <div style="position: fixed; top: 0; left: 0; z-index: 9999; width: 100%; background: rgb(14, 17, 23); ; text-align: center;"><a href="https://github.com/LALA09-erha/Streamlit---WebPrediksiKNN" target="_blank"><button style="border-radius: 12px;position: relative; top:50%; margin:10px;"><i class="fa fa-github"></i> Source Code</button></a><a href="https://lala09-erha.github.io/datamining/intro.html" target="_blank"><button  style="border-radius: 12px;position: relative; top:50%;"><i style="color: orange" class="fa fa-book"></i> Jupyter Book</button></a></div>', unsafe_allow_html=True)
+
     
     home = kolom[2].button('Home')
     about = kolom[3].button('About')
