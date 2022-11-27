@@ -9,7 +9,6 @@ import numpy as np
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn import metrics
 from sklearn.metrics import accuracy_score, f1_score, precision_score, recall_score, classification_report, confusion_matrix
-from link_button import link_button
 # pige title
 st.set_page_config(
     page_title="",
