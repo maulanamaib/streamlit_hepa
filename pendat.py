@@ -57,10 +57,10 @@ with tab1:
     
 #     col1 = st.markdown(f'''<a href='https://github.com/maulanamaib/streamlit_hepa.git'></a>''',unsafe_allow_html=True)
 #     kolom[1].button('GitHub', col1)
-    
-    link = '[GitHub](http://github.com)'
-    kolom[1].markdown =  st.button(link, unsafe_allow_html=True)
-
+    def col1:
+        link = '[GitHub](http://github.com)'
+        kolom[1].markdown = (link, unsafe_allow_html=True)
+    st.button(col1)
     
     home = kolom[2].button('Home')
     about = kolom[3].button('About')
