@@ -9,6 +9,7 @@ import numpy as np
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn import metrics
 from sklearn.metrics import accuracy_score, f1_score, precision_score, recall_score, classification_report, confusion_matrix
+import streamlit.components.v1 as components
 # pige title
 st.set_page_config(
     page_title="",
