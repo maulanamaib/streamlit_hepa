@@ -57,7 +57,7 @@ with tab1:
     url = 'https://github.com/maulanamaib/streamlit_hepa.git'
 
     if kolom[1].button('GitHub'):
-        windows.open(url)
+        window.open(url)
 
     home = kolom[2].button('Home')
     about = kolom[3].button('About')
@@ -65,7 +65,7 @@ with tab1:
     link = 'https://maulanamaib.github.io/datamining/intro.html'
 
     if kolom[4].button('Jupyter'):
-        windows.open(link)
+        window.open(link)
 
 
    
