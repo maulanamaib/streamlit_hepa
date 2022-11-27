@@ -7,13 +7,8 @@ pathlib==1.0.1
 numpy
 pandas
 pillow
-streamlit>=1.8.1
 requests
 requests_html
-pdfminer
-nltk
-pymupdf
-wget
-tabula-py
 matplotlib==3.6.2
+streamlit-modal
 
