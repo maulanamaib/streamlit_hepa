@@ -56,7 +56,7 @@ tab1, tab2, tab3 = st.tabs(["Form", "Normalisasi", "Model"])
 with tab1:
     kolom = st.columns((0.1, 3, 1, 3, 1.3))
   
-    if st.button('GitHub'):
+    if kolom[1].button('GitHub'):
         js = "window.open('https://github.com/maulanamaib/streamlit_hepa.git')"  # New tab or windows
         html = '<img src onerror="{}">'.format(js)
         div = Div(text=html)
@@ -66,7 +66,7 @@ with tab1:
     about = kolom[3].button('About')
 
    
-      if st.button('jupyter'):
+      if kolom[4].button('jupyter'):
             js1 = "window.open('https://maulanamaib.github.io/datamining/intro.html')"  # New tab or window
             html1 = '<img src onerror="{}">'.format(js1)
             div1 = Div(text=html1)
