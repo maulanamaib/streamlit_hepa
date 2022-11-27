@@ -55,8 +55,12 @@ tab1, tab2, tab3 = st.tabs(["Form", "Normalisasi", "Model"])
 with tab1:
     kolom = st.columns((0.1, 3, 1, 3, 1.3))   
     
-    col1 = st.markdown(f'''<a href='https://github.com/maulanamaib/streamlit_hepa.git'></a>''',unsafe_allow_html=True)
-    kolom[1].button('GitHub', col1)
+#     col1 = st.markdown(f'''<a href='https://github.com/maulanamaib/streamlit_hepa.git'></a>''',unsafe_allow_html=True)
+#     kolom[1].button('GitHub', col1)
+    
+    link = '[GitHub](http://github.com)'
+    btn =  st.markdown(link, unsafe_allow_html=True)
+    kolo[1].button(btn)
     
     home = kolom[2].button('Home')
     about = kolom[3].button('About')
