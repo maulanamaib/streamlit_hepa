@@ -66,11 +66,11 @@ with tab1:
     about = kolom[3].button('About')
 
    
-      if kolom[4].button('jupyter'):
-            js1 = "window.open('https://maulanamaib.github.io/datamining/intro.html')"  # New tab or window
-            html1 = '<img src onerror="{}">'.format(js1)
-            div1 = Div(text=html1)
-            st.bokeh_chart(div1)
+    if kolom[4].button('jupyter'):
+         js1 = "window.open('https://maulanamaib.github.io/datamining/intro.html')"  # New tab or window
+         html1 = '<img src onerror="{}">'.format(js1)
+         div1 = Div(text=html1)
+         st.bokeh_chart(div1)
 
    
 
