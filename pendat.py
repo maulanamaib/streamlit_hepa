@@ -58,7 +58,7 @@ with tab1:
 #     col1 = st.markdown(f'''<a href='https://github.com/maulanamaib/streamlit_hepa.git'></a>''',unsafe_allow_html=True)
 #     kolom[1].button('GitHub', col1)
    
-    link = '[GitHub](http://github.com)'
+    kolom[1] = link = '[GitHub](http://github.com)'
     st.markdown = (link, unsafe_allow_html=True)
     
   
