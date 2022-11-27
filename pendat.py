@@ -54,18 +54,17 @@ st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 tab1, tab2, tab3 = st.tabs(["Form", "Normalisasi", "Model"])
 with tab1:
     kolom = st.columns((0.1, 3, 1, 3, 1.3))
-    url = 'https://github.com/maulanamaib/streamlit_hepa.git'
+  
 
     if kolom[1].button('GitHub'):
-        window.open(url)
+        window.open('https://github.com/maulanamaib/streamlit_hepa.git',unsafe_allow_html=True)
 
     home = kolom[2].button('Home')
     about = kolom[3].button('About')
 
-    link = 'https://maulanamaib.github.io/datamining/intro.html'
-
+   
     if kolom[4].button('Jupyter'):
-        window.open(link)
+        window.open('https://maulanamaib.github.io/datamining/intro.html',)
 
 
    
