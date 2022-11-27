@@ -55,11 +55,11 @@ st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 tab1, tab2, tab3 = st.tabs(["Form", "Normalisasi", "Model"])
 with tab1:
     kolom = st.columns((0.1, 3, 1, 3, 1.3))   
-    col1 = components.iframe('https://github.com/maulanamaib/streamlit_hepa.git')
-    kolom[1].button('Github', col1)
-    
-  
-   
+    url = 'https://github.com/maulanamaib/streamlit_hepa.git'
+
+    if kolom[1].button('GitHub'):
+        webbrowser.open_new_tab(url)
+
    
   
     home = kolom[2].button('Home')
@@ -68,10 +68,10 @@ with tab1:
    
 #     kolom[4].button('Click Me!', 'https://maulanamaib.github.io/datamining/intro.html')
 
-    col2 = components.iframe('https://github.com/maulanamaib/streamlit_hepa.git')
-    kolom[4].button('jupyter', col2)
-   
+    link = 'https://maulanamaib.github.io/datamining/intro.html'
 
+    if kolom[4].button('Jupyter'):
+        webbrowser.open_new_tab(link)
 
     # home page
     if home==False and about==False or home==True and about==False:
