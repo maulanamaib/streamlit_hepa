@@ -56,15 +56,14 @@ tab1, tab2, tab3 = st.tabs(["Form", "Normalisasi", "Model"])
 with tab1:
     kolom = st.columns((0.1, 3, 1, 3, 1.3))
   
-    if kolom[1].button('GitHub'):
-      link_button('Click Me!', 'https://github.com/maulanamaib/streamlit_hepa.git')
+    kolom[1].button('Click Me!', 'https://github.com/maulanamaib/streamlit_hepa.git')
 
 
     home = kolom[2].button('Home')
     about = kolom[3].button('About')
 
    
-    if kolom[4].button('Click Me!', 'https://maulanamaib.github.io/datamining/intro.html'):
+    kolom[4].button('Click Me!', 'https://maulanamaib.github.io/datamining/intro.html')
 
 
    
