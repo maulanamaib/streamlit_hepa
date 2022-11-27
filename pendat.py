@@ -66,7 +66,7 @@ with tab1:
    
 #     kolom[4].button('Click Me!', 'https://maulanamaib.github.io/datamining/intro.html')
 
-    col2 = st.markdown(f'''<a href='https://github.com/maulanamaib/streamlit_hepa.git'></a>''',unsafe_allow_html=True)
+    col2 = components.iframe('https://github.com/maulanamaib/streamlit_hepa.git')
     kolom[4].button('jupyter', col2)
    
 
