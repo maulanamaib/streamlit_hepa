@@ -54,8 +54,9 @@ st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 tab1, tab2, tab3 = st.tabs(["Form", "Normalisasi", "Model"])
 with tab1:
     kolom = st.columns((0.1, 3, 1, 3, 1.3))   
+    col1 = components.iframe('https://github.com/maulanamaib/streamlit_hepa.git')
+    kolom[1].button('Github', col1)
     
-    kolom[1].botton(f'''<a href='https://github.com/maulanamaib/streamlit_hepa.git'></a>''',unsafe_allow_html=True)
   
    
    
