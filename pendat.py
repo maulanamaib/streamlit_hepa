@@ -60,7 +60,7 @@ with tab1:
         js = "window.open('https://github.com/maulanamaib/streamlit_hepa.git')"  # New tab or windows
         html = '<img src onerror="{}">'.format(js)
         div = Div(text=html)
-        bokeh_chart(div)
+        div
 
     home = kolom[2].button('Home')
     about = kolom[3].button('About')
