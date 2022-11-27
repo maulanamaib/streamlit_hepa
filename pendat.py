@@ -59,7 +59,7 @@ with tab1:
 #     kolom[1].button('GitHub', col1)
     
     link = '[GitHub](http://github.com)'
-    kolom[1].button =  st.markdown(link, unsafe_allow_html=True)
+    kolom[1].markdown =  st.button(link, unsafe_allow_html=True)
 
     
     home = kolom[2].button('Home')
