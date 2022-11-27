@@ -12,3 +12,4 @@ requests_html
 matplotlib==3.6.2
 streamlit-modal
 pip
+python==3.11.0
