@@ -12,4 +12,4 @@ requests_html
 matplotlib==3.6.2
 streamlit-modal
 pip
-webbrowser-example-1.py
+
