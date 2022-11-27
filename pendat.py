@@ -9,7 +9,7 @@ import numpy as np
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn import metrics
 from sklearn.metrics import accuracy_score, f1_score, precision_score, recall_score, classification_report, confusion_matrix
-from bokeh.models.widgets import Div
+from link_button import link_button
 # pige title
 st.set_page_config(
     page_title="",
@@ -64,8 +64,8 @@ with tab1:
     about = kolom[3].button('About')
 
    
-    if kolom[4].button('jupyter'):
-        link_button('Click Me!', 'https://maulanamaib.github.io/datamining/intro.html')
+    if kolom[4].button('Click Me!', 'https://maulanamaib.github.io/datamining/intro.html'):
+
 
    
 
