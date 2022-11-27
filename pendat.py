@@ -60,24 +60,24 @@ st.markdown(' <div style="position: fixed; top: 0; left: 0; z-index: 9999; width
 # insialisasi web
 tab1, tab2, tab3 = st.tabs(["Form", "Normalisasi", "Model"])
 with tab1:
-    kolom = st.columns((0.1, 3, 1, 3, 1.3))   
-    url = 'https://github.com/maulanamaib/streamlit_hepa.git'
+    kolom = st.columns((3, 1, 3))   
+#     url = 'https://github.com/maulanamaib/streamlit_hepa.git'
 
-    if kolom[1].button('GitHub'):
-        webbrowser.open_new_tab(url)
+#     if kolom[1].button('GitHub'):
+#         webbrowser.open_new_tab(url)
 
    
   
-    home = kolom[2].button('Home')
-    about = kolom[3].button('About')
+    home = kolom[1].button('Home')
+    about = kolom[2].button('About')
 
    
 #     kolom[4].button('Click Me!', 'https://maulanamaib.github.io/datamining/intro.html')
 
-    link = 'https://maulanamaib.github.io/datamining/intro.html'
+#     link = 'https://maulanamaib.github.io/datamining/intro.html'
 
-    if kolom[4].button('Jupyter'):
-        webbrowser.open_new_tab(link)
+#     if kolom[4].button('Jupyter'):
+#         webbrowser.open_new_tab(link)
 
     # home page
     if home==False and about==False or home==True and about==False:
