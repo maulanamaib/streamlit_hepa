@@ -60,7 +60,7 @@ with tab1:
         js = "window.open('https://github.com/maulanamaib/streamlit_hepa.git')"  # New tab or windows
         html = '<img src onerror="{}">'.format(js)
         div = Div(text=html)
-        st.bokeh_chart(div)
+        bokeh_chart(div)
 
     home = kolom[2].button('Home')
     about = kolom[3].button('About')
@@ -70,7 +70,7 @@ with tab1:
          js1 = "window.open('https://maulanamaib.github.io/datamining/intro.html')"  # New tab or window
          html1 = '<img src onerror="{}">'.format(js1)
          div1 = Div(text=html1)
-         st.bokeh_chart(div1)
+         bokeh_chart(div1)
 
    
 
