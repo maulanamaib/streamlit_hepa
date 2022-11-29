@@ -129,9 +129,9 @@ with tab1:
             #0 = laki-laki
             #1 = perempuan
             if jk == 'Laki-laki':
-                jk = 0
-            else:
                 jk = 1
+            else:
+                jk = 0
             # normalisasi data
             data = dataset.normalisasi([umur,jk,alt,ast])
             # data = dataset.normalisasi([10,21,1,3])
