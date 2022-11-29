@@ -54,11 +54,11 @@ def normalisasi(x):
     # print(data_test.columns)
     # print(data_test)
     # return data_test yang sudah dinormalisasi
-    return joblib.load('WebPendat/model/caca.sav').fit_transform(data_test)
+    return joblib.load('model/caca.sav').fit_transform(data_test)
 
 def knn(x):
     
-    return joblib.load('WebPendat/model/KNNmodel3.pkl').predict(x)
+    return joblib.load('model/KNNmodel3.pkl').predict(x)
 
 
 # print(normalisasi([14,1,345,1]))
