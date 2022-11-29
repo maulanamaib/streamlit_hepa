@@ -141,11 +141,19 @@ with tab1:
             with st.spinner("Tunggu Sebentar Masih Proses..."):
                 if prediksi[-1]== 0:
                     # time.sleep(1)
-                    st.success("Hasil Prediksi : "+nama+" dengan golongna darah  "+bp+"     Sehat! tidak memeliki kemungkinan terkena penyakit hepa")
-            
-                else :  
-                    time.sleep(1)
-                    st.warning("Hasil Prediksi : "+nama+"  dengan golongan darah "+bp+" Kemungkinan terkena penyakit hepa")
+                    st.success("Hasil Prediksi : "+nama+" dengan golongna darah  "+bp+"  sehat!!")
+                    
+                elif prediksi==1:
+                    st.success("Hasil Prediksi: "+nama+" kurang sehat")
+                elif prediksi==2:
+                    st.success("Hasil Prediksi: "+nama+" terkena hepatitis")
+                elif prediksi==3:
+                    st.succes("Hasil Prediksi: "+nama"  tekena fibrosis")
+                elif prediksi==4
+                    st.success("Hasil Prediksi: "+nama+" terkena cirrhosis")          
+#                 else :  
+#                     time.sleep(1)
+#                     st.warning("Hasil Prediksi : "+nama+"  dengan golongan darah "+bp+" Kemungkinan terkena penyakit hepa")
 
 
     # about page
