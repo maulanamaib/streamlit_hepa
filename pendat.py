@@ -148,7 +148,7 @@ with tab1:
                 elif prediksi==2:
                     st.success("Hasil Prediksi: "+nama+" terkena hepatitis")
                 elif prediksi==3:
-                    st.succes("Hasil Prediksi: "+nama"  tekena fibrosis")
+                    st.succes("Hasil Prediksi: "+nama+"  tekena fibrosis")
                 elif prediksi==4
                     st.success("Hasil Prediksi: "+nama+" terkena cirrhosis")          
 #                 else :  
