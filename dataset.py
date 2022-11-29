@@ -46,7 +46,7 @@ def normalisasi(x):
     # cols = ["Age","Sex","ALT","AST"]
     cols = ["Age","Sex","ALT","AST"]
     df = pd.DataFrame([x],columns=cols)
-    data_test = pd.read_csv('WebPendat/model/datafix2.csv')
+    data_test = pd.read_csv('model/datafix2.csv')
     data_test = data_test.drop(data_test.columns[0],axis=1)
     # data_test = data_test.drop(data_test.columns[7:13],axis=1)
     # memasukkan data kedalam data test
