@@ -143,13 +143,13 @@ with tab1:
                     # time.sleep(1)
                     st.success("Hasil Prediksi : "+nama+" dengan golongna darah  "+bp+"  sehat!!")
                     
-                elif prediksi==1:
+                elif prediksi[-1]==1:
                     st.success("Hasil Prediksi: "+nama+" kurang sehat")
-                elif prediksi==2:
+                elif prediksi[-1]==2:
                     st.success("Hasil Prediksi: "+nama+" terkena hepatitis")
-                elif prediksi==3:
+                elif prediksi[-1]==3:
                     st.succes("Hasil Prediksi: "+nama+"  tekena fibrosis")
-                elif prediksi==4:
+                elif prediksi[-1]==4:
                     st.success("Hasil Prediksi: "+nama+" terkena cirrhosis")          
 #                 else :  
 #                     time.sleep(1)
