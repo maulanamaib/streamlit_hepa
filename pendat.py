@@ -121,35 +121,35 @@ with tab1:
         
         # b = st.number_input("masukkan b")
         #    Centering Butoon 
-        columns = st.columns((2, 0.6, 2))
-        sumbit = columns[1].button("Submit")
-        if sumbit and nama != '' and jk != '' and bp != 0 and umur != 0  and ast != 0 and alt != 0:
+    columns = st.columns((2, 0.6, 2))
+    sumbit = columns[1].button("Submit")
+    if sumbit and nama != '' and jk != '' and bp != 0 and umur != 0  and ast != 0 and alt != 0:
             # cek jenis kelamin
             #0 = laki-laki
             #1 = perempuan
-            if jk == 'Laki-laki':
-                jk = 0
-            else:
-                jk = 1
+        if jk == 'Laki-laki':
+            jk = 0
+        else:
+            jk = 1
             # normalisasi data
-            data = dataset.normalisasi([umur,jk,alt,ast])
+        data = dataset.normalisasi([umur,jk,alt,ast])
             # data = dataset.normalisasi([10,21,1,3])
             # prediksi data
-            prediksi = dataset.knn(data)    
+        prediksi = dataset.knn(data)    
             # cek prediksi
-            with st.spinner("Tunggu Sebentar Masih Proses..."):
-                if prediksi[-1]== 0:
+        with st.spinner("Tunggu Sebentar Masih Proses..."):
+            if prediksi[-1]== 0:
                     # time.sleep(1)
-                    st.success("Hasil Prediksi : "+nama+" dengan golongna darah  "+bp+"  sehat!!")
+                st.success("Hasil Prediksi : "+nama+" dengan golongna darah  "+bp+"  sehat!!")
                     
-                elif prediksi[-1]==1:
-                    st.warning("Hasil Prediksi: "+nama+" kurang sehat")
-                elif prediksi[-1]==2:
-                    st.warning("Hasil Prediksi: "+nama+" terkena hepatitis")
-                elif prediksi[-1]==3:
-                    st.warning("Hasil Prediksi: "+nama+"  tekena fibrosis")
-                elif prediksi[-1]==4:
-                    st.warning("Hasil Prediksi: "+nama+" terkena cirrhosis")          
+            elif prediksi[-1]==1:
+                st.warning("Hasil Prediksi: "+nama+" kurang sehat")
+            elif prediksi[-1]==2:
+                st.warning("Hasil Prediksi: "+nama+" terkena hepatitis")
+            elif prediksi[-1]==3:
+                st.warning("Hasil Prediksi: "+nama+"  tekena fibrosis")
+            elif prediksi[-1]==4:
+                st.warning("Hasil Prediksi: "+nama+" terkena cirrhosis")          
 #                 else :  
 #                     time.sleep(1)
 #                     st.warning("Hasil Prediksi : "+nama+"  dengan golongan darah "+bp+" Kemungkinan terkena penyakit hepa")
