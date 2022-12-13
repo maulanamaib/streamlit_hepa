@@ -60,7 +60,7 @@ st.markdown(' <div style="position: fixed; top: 0; left: 0; z-index: 9999; width
 # insialisasi web
 tab1, tab2, tab3, tab4 = st.tabs(["Form", "Normalisasi", "Model", "deskripsi"])
 with tab1:
-    kolom = st.columns((2 , 1, 2.7))   
+    kolom = st.columns((1 , 1))   
 #     url = 'https://github.com/maulanamaib/streamlit_hepa.git'
 
 #     if kolom[1].button('GitHub'):
@@ -157,14 +157,14 @@ with tab1:
 
 
     # about page
-    if about==True and home==False:
-        st.markdown("<h1 style='text-align: center; color: white; margin:0 ; padding:0;'>Tentang Sistem ini</h1>", unsafe_allow_html=True)
-        st.write('Sistem Predeksi Penyakit hepa adalah sebuah sistem yang bertujuan untuk memprediksi penyakit hepa. Sistem ini dibuat menggunakan bahasa pemrograman python dan library streamlit.')
-        st.markdown("<p  color: white;'>Pada sistem ini menggunakan model KNN ( <i>K-nearest neighbors algorithm</i> ) dengan parameter <b>K = 3</b> . Dataset yang digunakan memiliki <b>5 fitur</b> termasuk kelas.</p>", unsafe_allow_html=True)
-        st.write('Alasan menggunakan model KNN dengan parameter k = 3 adalah karena memiliki akurasi yang terbesar dari model lainnya pada dataset ini, sehingga diputuskan untuk menggunakan model tersebut.')
-        st.write("Disini range umur mempengaruhi prediksi kemungkinan terkenanya penyakit hepa")
-        st.markdown("<b>Alanine transminase (ALT), yaitu enzim yang mengubah protein menjadi energi untuk digunakan oleh sel-sel hati<b>",unsafe_allow_html=True)
-        st.markdown("<b>Alanine transminase (ALT), yaitu enzim yang mengubah protein menjadi energi untuk digunakan oleh sel-sel hati<b>",unsafe_allow_html=True)
+#     if about==True and home==False:
+#         st.markdown("<h1 style='text-align: center; color: white; margin:0 ; padding:0;'>Tentang Sistem ini</h1>", unsafe_allow_html=True)
+#         st.write('Sistem Predeksi Penyakit hepa adalah sebuah sistem yang bertujuan untuk memprediksi penyakit hepa. Sistem ini dibuat menggunakan bahasa pemrograman python dan library streamlit.')
+#         st.markdown("<p  color: white;'>Pada sistem ini menggunakan model KNN ( <i>K-nearest neighbors algorithm</i> ) dengan parameter <b>K = 3</b> . Dataset yang digunakan memiliki <b>5 fitur</b> termasuk kelas.</p>", unsafe_allow_html=True)
+#         st.write('Alasan menggunakan model KNN dengan parameter k = 3 adalah karena memiliki akurasi yang terbesar dari model lainnya pada dataset ini, sehingga diputuskan untuk menggunakan model tersebut.')
+#         st.write("Disini range umur mempengaruhi prediksi kemungkinan terkenanya penyakit hepa")
+#         st.markdown("<b>Alanine transminase (ALT), yaitu enzim yang mengubah protein menjadi energi untuk digunakan oleh sel-sel hati<b>",unsafe_allow_html=True)
+#         st.markdown("<b>Alanine transminase (ALT), yaitu enzim yang mengubah protein menjadi energi untuk digunakan oleh sel-sel hati<b>",unsafe_allow_html=True)
 
 with tab2:
     code ='''
