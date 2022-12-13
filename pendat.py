@@ -80,7 +80,7 @@ with tab1:
 #         webbrowser.open_new_tab(link)
 
     # home page
-    if home==False and about==False or home==True and about==False:
+#     if home==False and about==False or home==True and about==False:
         
         
         st.write("")
