@@ -58,7 +58,7 @@ st.markdown(' <div style="position: fixed; top: 0; left: 0; z-index: 9999; width
 
 
 # insialisasi web
-tab1, tab2, tab3 = st.tabs(["Form", "Normalisasi", "Model"])
+tab1, tab2, tab3, tab4 = st.tabs(["Form", "Normalisasi", "Model", "deskripsi"])
 with tab1:
     kolom = st.columns((2 , 1, 2.7))   
 #     url = 'https://github.com/maulanamaib/streamlit_hepa.git'
@@ -69,7 +69,7 @@ with tab1:
    
   
     home = kolom[1].button('Home')
-    about = kolom[2].button('About')
+#     about = kolom[2].button('About')
 
    
 #     kolom[4].button('Click Me!', 'https://maulanamaib.github.io/datamining/intro.html')
@@ -443,3 +443,11 @@ print('accuracy: {}'.format(acc))'''
     f1score
     st.write('accuracy:')
     acc
+with tab4:
+        st.markdown("<h1 style='text-align: center; color: white; margin:0 ; padding:0;'>Tentang Sistem ini</h1>", unsafe_allow_html=True)
+        st.write('Sistem Predeksi Penyakit hepa adalah sebuah sistem yang bertujuan untuk memprediksi penyakit hepa. Sistem ini dibuat menggunakan bahasa pemrograman python dan library streamlit.')
+        st.markdown("<p  color: white;'>Pada sistem ini menggunakan model KNN ( <i>K-nearest neighbors algorithm</i> ) dengan parameter <b>K = 3</b> . Dataset yang digunakan memiliki <b>5 fitur</b> termasuk kelas.</p>", unsafe_allow_html=True)
+        st.write('Alasan menggunakan model KNN dengan parameter k = 3 adalah karena memiliki akurasi yang terbesar dari model lainnya pada dataset ini, sehingga diputuskan untuk menggunakan model tersebut.')
+        st.write("Disini range umur mempengaruhi prediksi kemungkinan terkenanya penyakit hepa")
+        st.markdown("<b>Alanine transminase (ALT), yaitu enzim yang mengubah protein menjadi energi untuk digunakan oleh sel-sel hati<b>",unsafe_allow_html=True)
+        st.markdown("<b>Alanine transminase (ALT), yaitu enzim yang mengubah protein menjadi energi untuk digunakan oleh sel-sel hati<b>",unsafe_allow_html=True)
