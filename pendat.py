@@ -82,10 +82,9 @@ with tab1:
     # home page
 #     if home==False and about==False or home==True and about==False:
         
-        
-        st.write("")
-        st.markdown("<h1 style='text-align: center; color: white; margin:0 ; padding:0;'>Prediksi Penyakit Hepa</h1>", unsafe_allow_html=True)
-        st.markdown("<p style='text-align: center; color: white;'>Harap Diisi Semua Kolom</p>", unsafe_allow_html=True)
+    st.write("")
+    st.markdown("<h1 style='text-align: center; color: white; margin:0 ; padding:0;'>Prediksi Penyakit Hepa</h1>", unsafe_allow_html=True)
+    st.markdown("<p style='text-align: center; color: white;'>Harap Diisi Semua Kolom</p>", unsafe_allow_html=True)
 
         col1, col2,col3 = st.columns(3)
         with col1:
