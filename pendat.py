@@ -60,7 +60,7 @@ st.markdown(' <div style="position: fixed; top: 0; left: 0; z-index: 9999; width
 # insialisasi web
 tab1, tab2, tab3, tab4 = st.tabs(["Form", "Normalisasi", "Model", "deskripsi"])
 with tab1:
-    kolom = st.columns((1 , 2))   
+    kolom = st.columns((1 , 1.5))   
 #     url = 'https://github.com/maulanamaib/streamlit_hepa.git'
 
 #     if kolom[1].button('GitHub'):
