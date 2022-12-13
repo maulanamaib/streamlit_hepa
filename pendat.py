@@ -87,19 +87,19 @@ with tab1:
     st.markdown("<p style='text-align: center; color: white;'>Harap Diisi Semua Kolom</p>", unsafe_allow_html=True)
 
     col1, col2,col3 = st.columns(3)
-        with col1:
-            nama = st.text_input("Masukkan Nama",placeholder='Nama')
-        with col2:
-            umur = st.number_input("Masukkan Umur",max_value=100)
-        with col3:    
-            jk = st.selectbox("Jenis Kelamin",('Laki-laki','Perempuan'))
+    with col1:
+        nama = st.text_input("Masukkan Nama",placeholder='Nama')
+    with col2:
+        umur = st.number_input("Masukkan Umur",max_value=100)
+    with col3:    
+        jk = st.selectbox("Jenis Kelamin",('Laki-laki','Perempuan'))
 
-        bp = st.selectbox("Golongan Darah",("A","B","AB","O"))
-        col4,col5 =st.columns(2)
-        with col4:
-            alt = st.number_input("masukkan nilai ALT", min_value=0 ,max_value=1000000000000)
-        with col5:
-            ast = st.number_input("masukkan nilai AST",min_value=0,max_value=10000000000000)
+    bp = st.selectbox("Golongan Darah",("A","B","AB","O"))
+    col4,col5 =st.columns(2)
+    with col4:
+        alt = st.number_input("masukkan nilai ALT", min_value=0 ,max_value=1000000000000)
+    with col5:
+        ast = st.number_input("masukkan nilai AST",min_value=0,max_value=10000000000000)
         # col5, col6, col7, col8 = st.columns(4)
         # with col5:
         #     prot = st.number_input("Masukkan nilai prot")
