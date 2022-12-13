@@ -86,7 +86,7 @@ with tab1:
     st.markdown("<h1 style='text-align: center; color: white; margin:0 ; padding:0;'>Prediksi Penyakit Hepa</h1>", unsafe_allow_html=True)
     st.markdown("<p style='text-align: center; color: white;'>Harap Diisi Semua Kolom</p>", unsafe_allow_html=True)
 
-        col1, col2,col3 = st.columns(3)
+    col1, col2,col3 = st.columns(3)
         with col1:
             nama = st.text_input("Masukkan Nama",placeholder='Nama')
         with col2:
